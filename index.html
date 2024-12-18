@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+    <script>
+        const validUsername = "clodah123";
+        const validPassword = "12345";
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();     
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (username === validUsername && password === validPassword) {
+                alert("Login Successful! Welcome");
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid Username or Password. Please try again.");
+            }});
+    </script>
+</body>
+</html>

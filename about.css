@@ -1,0 +1,106 @@
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url('aobutpaawa.gif');
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bgblr{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+}
+.sidebar a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    transition: background 0.3s, color 0.3s;
+}
+.sidebar a:hover {
+    background-color: #444;
+    color: #fff;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+.main-content h1{
+    margin-top: -10%;
+}
+.ffe{
+    border: solid transparent;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    box-shadow: 0, 0, 30px black;
+}
+
+.card {
+    translate: -0% -45%;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(163deg, #00ffee 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    position: absolute;
+   }
+   
+   .card2 {
+    width: 250px;
+    height: 250px;
+    background-color: #1a1a1a;
+    border-radius:;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+.main-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    color: #ccc;
+    line-height: 1.8;
+}
